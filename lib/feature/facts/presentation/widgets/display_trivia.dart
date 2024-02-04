@@ -1,5 +1,6 @@
 import 'package:cat_trivia/feature/facts/domain/entity/cat_trivia.dart';
 import 'package:cat_trivia/feature/facts/presentation/bloc/cat_trivia_bloc.dart';
+import 'package:cat_trivia/feature/facts/presentation/pages/cat_trivia_fact_history_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -48,13 +49,30 @@ class TriviaDisplay extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 62),
-          child: TextButton(
-            onPressed: () {
-              context
-                  .read<CatTriviaBloc>()
-                  .add(const CatTriviaEvent.getCatTrivia());
-            },
-            child: const Text('Another Fact!', style: TextStyle(fontSize: 20)),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: () {
+                  context.read<CatTriviaBloc>().add(const CatTriviaEvent.getCatHistory());
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => const CatFactHistoryPage()));
+                },
+                child:
+                    const Text('Fact History', style: TextStyle(fontSize: 20))
+              ),
+              TextButton(
+                onPressed: () {
+                  context
+                      .read<CatTriviaBloc>()
+                      .add(const CatTriviaEvent.getCatTrivia());
+                  // context
+                  //     .read<CatTriviaBloc>()
+                  //     .add(const CatTriviaEvent.postCatHistory());
+                },
+                child:
+                    const Text('Another Fact!', style: TextStyle(fontSize: 20)),
+              ),
+            ],
           ),
         )
       ],

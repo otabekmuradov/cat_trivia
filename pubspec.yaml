@@ -30,19 +30,39 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
   cupertino_icons: ^1.0.2
+
+  #network
   http: ^0.13.3
+
   dartz: ^0.10.1
+  
+  #freezed
+  #generator
   freezed: ^2.4.6
   build_runner: ^2.4.8
   freezed_annotation: ^2.4.1
   json_serializable: ^6.7.1
+
+  #state managment
   flutter_bloc: ^8.1.3
   bloc: ^8.1.2
+
+  #dependency injection
   get_it: ^7.6.7
+
+  #network checker
   data_connection_checker_nulls: ^0.0.2
+
   intl: ^0.19.0
+
+  #json annotation
   json_annotation: ^4.8.1
+
+  # DATABASE
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
 
 
 
@@ -50,6 +70,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  hive_generator: ^2.0.1
 
   flutter_lints: ^2.0.0
 

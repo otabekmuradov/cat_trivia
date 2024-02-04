@@ -19,32 +19,38 @@ mixin _$CatTriviaEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() getCatTrivia,
+    required TResult Function() getCatHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getCatTrivia,
+    TResult? Function()? getCatHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getCatTrivia,
+    TResult Function()? getCatHistory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetCatTrivia value) getCatTrivia,
+    required TResult Function(_GetCatHistory value) getCatHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetCatTrivia value)? getCatTrivia,
+    TResult? Function(_GetCatHistory value)? getCatHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetCatTrivia value)? getCatTrivia,
+    TResult Function(_GetCatHistory value)? getCatHistory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -113,6 +119,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() getCatTrivia,
+    required TResult Function() getCatHistory,
   }) {
     return getCatTrivia();
   }
@@ -121,6 +128,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getCatTrivia,
+    TResult? Function()? getCatHistory,
   }) {
     return getCatTrivia?.call();
   }
@@ -129,6 +137,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getCatTrivia,
+    TResult Function()? getCatHistory,
     required TResult orElse(),
   }) {
     if (getCatTrivia != null) {
@@ -141,6 +150,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetCatTrivia value) getCatTrivia,
+    required TResult Function(_GetCatHistory value) getCatHistory,
   }) {
     return getCatTrivia(this);
   }
@@ -149,6 +159,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetCatTrivia value)? getCatTrivia,
+    TResult? Function(_GetCatHistory value)? getCatHistory,
   }) {
     return getCatTrivia?.call(this);
   }
@@ -157,6 +168,7 @@ class _$GetCatTriviaImpl with DiagnosticableTreeMixin implements _GetCatTrivia {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetCatTrivia value)? getCatTrivia,
+    TResult Function(_GetCatHistory value)? getCatHistory,
     required TResult orElse(),
   }) {
     if (getCatTrivia != null) {
@@ -171,10 +183,123 @@ abstract class _GetCatTrivia implements CatTriviaEvent {
 }
 
 /// @nodoc
+abstract class _$$GetCatHistoryImplCopyWith<$Res> {
+  factory _$$GetCatHistoryImplCopyWith(
+          _$GetCatHistoryImpl value, $Res Function(_$GetCatHistoryImpl) then) =
+      __$$GetCatHistoryImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetCatHistoryImplCopyWithImpl<$Res>
+    extends _$CatTriviaEventCopyWithImpl<$Res, _$GetCatHistoryImpl>
+    implements _$$GetCatHistoryImplCopyWith<$Res> {
+  __$$GetCatHistoryImplCopyWithImpl(
+      _$GetCatHistoryImpl _value, $Res Function(_$GetCatHistoryImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GetCatHistoryImpl
+    with DiagnosticableTreeMixin
+    implements _GetCatHistory {
+  const _$GetCatHistoryImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'CatTriviaEvent.getCatHistory()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'CatTriviaEvent.getCatHistory'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetCatHistoryImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getCatTrivia,
+    required TResult Function() getCatHistory,
+  }) {
+    return getCatHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getCatTrivia,
+    TResult? Function()? getCatHistory,
+  }) {
+    return getCatHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getCatTrivia,
+    TResult Function()? getCatHistory,
+    required TResult orElse(),
+  }) {
+    if (getCatHistory != null) {
+      return getCatHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GetCatTrivia value) getCatTrivia,
+    required TResult Function(_GetCatHistory value) getCatHistory,
+  }) {
+    return getCatHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GetCatTrivia value)? getCatTrivia,
+    TResult? Function(_GetCatHistory value)? getCatHistory,
+  }) {
+    return getCatHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GetCatTrivia value)? getCatTrivia,
+    TResult Function(_GetCatHistory value)? getCatHistory,
+    required TResult orElse(),
+  }) {
+    if (getCatHistory != null) {
+      return getCatHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetCatHistory implements CatTriviaEvent {
+  const factory _GetCatHistory() = _$GetCatHistoryImpl;
+}
+
+/// @nodoc
 mixin _$CatTriviaState {
   Statuses get status => throw _privateConstructorUsedError;
   CatTrivia? get catTrivia => throw _privateConstructorUsedError;
   Uint8List? get image => throw _privateConstructorUsedError;
+  List<CatHistoryDto>? get catHistoryDtoList =>
+      throw _privateConstructorUsedError;
+  CatTriviaDto? get catTriviaDto => throw _privateConstructorUsedError;
   Failure? get error => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -192,7 +317,11 @@ abstract class $CatTriviaStateCopyWith<$Res> {
       {Statuses status,
       CatTrivia? catTrivia,
       Uint8List? image,
+      List<CatHistoryDto>? catHistoryDtoList,
+      CatTriviaDto? catTriviaDto,
       Failure? error});
+
+  $CatTriviaDtoCopyWith<$Res>? get catTriviaDto;
 }
 
 /// @nodoc
@@ -211,6 +340,8 @@ class _$CatTriviaStateCopyWithImpl<$Res, $Val extends CatTriviaState>
     Object? status = null,
     Object? catTrivia = freezed,
     Object? image = freezed,
+    Object? catHistoryDtoList = freezed,
+    Object? catTriviaDto = freezed,
     Object? error = freezed,
   }) {
     return _then(_value.copyWith(
@@ -226,11 +357,31 @@ class _$CatTriviaStateCopyWithImpl<$Res, $Val extends CatTriviaState>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as Uint8List?,
+      catHistoryDtoList: freezed == catHistoryDtoList
+          ? _value.catHistoryDtoList
+          : catHistoryDtoList // ignore: cast_nullable_to_non_nullable
+              as List<CatHistoryDto>?,
+      catTriviaDto: freezed == catTriviaDto
+          ? _value.catTriviaDto
+          : catTriviaDto // ignore: cast_nullable_to_non_nullable
+              as CatTriviaDto?,
       error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Failure?,
     ) as $Val);
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $CatTriviaDtoCopyWith<$Res>? get catTriviaDto {
+    if (_value.catTriviaDto == null) {
+      return null;
+    }
+
+    return $CatTriviaDtoCopyWith<$Res>(_value.catTriviaDto!, (value) {
+      return _then(_value.copyWith(catTriviaDto: value) as $Val);
+    });
   }
 }
 
@@ -246,7 +397,12 @@ abstract class _$$CatTriviaStateImplCopyWith<$Res>
       {Statuses status,
       CatTrivia? catTrivia,
       Uint8List? image,
+      List<CatHistoryDto>? catHistoryDtoList,
+      CatTriviaDto? catTriviaDto,
       Failure? error});
+
+  @override
+  $CatTriviaDtoCopyWith<$Res>? get catTriviaDto;
 }
 
 /// @nodoc
@@ -263,6 +419,8 @@ class __$$CatTriviaStateImplCopyWithImpl<$Res>
     Object? status = null,
     Object? catTrivia = freezed,
     Object? image = freezed,
+    Object? catHistoryDtoList = freezed,
+    Object? catTriviaDto = freezed,
     Object? error = freezed,
   }) {
     return _then(_$CatTriviaStateImpl(
@@ -278,6 +436,14 @@ class __$$CatTriviaStateImplCopyWithImpl<$Res>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as Uint8List?,
+      catHistoryDtoList: freezed == catHistoryDtoList
+          ? _value._catHistoryDtoList
+          : catHistoryDtoList // ignore: cast_nullable_to_non_nullable
+              as List<CatHistoryDto>?,
+      catTriviaDto: freezed == catTriviaDto
+          ? _value.catTriviaDto
+          : catTriviaDto // ignore: cast_nullable_to_non_nullable
+              as CatTriviaDto?,
       error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -292,7 +458,13 @@ class _$CatTriviaStateImpl
     with DiagnosticableTreeMixin
     implements _CatTriviaState {
   const _$CatTriviaStateImpl(
-      {this.status = Statuses.initial, this.catTrivia, this.image, this.error});
+      {this.status = Statuses.initial,
+      this.catTrivia,
+      this.image,
+      final List<CatHistoryDto>? catHistoryDtoList,
+      this.catTriviaDto,
+      this.error})
+      : _catHistoryDtoList = catHistoryDtoList;
 
   @override
   @JsonKey()
@@ -301,12 +473,25 @@ class _$CatTriviaStateImpl
   final CatTrivia? catTrivia;
   @override
   final Uint8List? image;
+  final List<CatHistoryDto>? _catHistoryDtoList;
+  @override
+  List<CatHistoryDto>? get catHistoryDtoList {
+    final value = _catHistoryDtoList;
+    if (value == null) return null;
+    if (_catHistoryDtoList is EqualUnmodifiableListView)
+      return _catHistoryDtoList;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  @override
+  final CatTriviaDto? catTriviaDto;
   @override
   final Failure? error;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'CatTriviaState(status: $status, catTrivia: $catTrivia, image: $image, error: $error)';
+    return 'CatTriviaState(status: $status, catTrivia: $catTrivia, image: $image, catHistoryDtoList: $catHistoryDtoList, catTriviaDto: $catTriviaDto, error: $error)';
   }
 
   @override
@@ -317,6 +502,8 @@ class _$CatTriviaStateImpl
       ..add(DiagnosticsProperty('status', status))
       ..add(DiagnosticsProperty('catTrivia', catTrivia))
       ..add(DiagnosticsProperty('image', image))
+      ..add(DiagnosticsProperty('catHistoryDtoList', catHistoryDtoList))
+      ..add(DiagnosticsProperty('catTriviaDto', catTriviaDto))
       ..add(DiagnosticsProperty('error', error));
   }
 
@@ -329,12 +516,22 @@ class _$CatTriviaStateImpl
             (identical(other.catTrivia, catTrivia) ||
                 other.catTrivia == catTrivia) &&
             const DeepCollectionEquality().equals(other.image, image) &&
+            const DeepCollectionEquality()
+                .equals(other._catHistoryDtoList, _catHistoryDtoList) &&
+            (identical(other.catTriviaDto, catTriviaDto) ||
+                other.catTriviaDto == catTriviaDto) &&
             (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, status, catTrivia,
-      const DeepCollectionEquality().hash(image), error);
+  int get hashCode => Object.hash(
+      runtimeType,
+      status,
+      catTrivia,
+      const DeepCollectionEquality().hash(image),
+      const DeepCollectionEquality().hash(_catHistoryDtoList),
+      catTriviaDto,
+      error);
 
   @JsonKey(ignore: true)
   @override
@@ -349,6 +546,8 @@ abstract class _CatTriviaState implements CatTriviaState {
       {final Statuses status,
       final CatTrivia? catTrivia,
       final Uint8List? image,
+      final List<CatHistoryDto>? catHistoryDtoList,
+      final CatTriviaDto? catTriviaDto,
       final Failure? error}) = _$CatTriviaStateImpl;
 
   @override
@@ -357,6 +556,10 @@ abstract class _CatTriviaState implements CatTriviaState {
   CatTrivia? get catTrivia;
   @override
   Uint8List? get image;
+  @override
+  List<CatHistoryDto>? get catHistoryDtoList;
+  @override
+  CatTriviaDto? get catTriviaDto;
   @override
   Failure? get error;
   @override

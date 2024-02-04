@@ -6,6 +6,8 @@ class CatTriviaState with _$CatTriviaState {
     @Default(Statuses.initial) Statuses status,
     CatTrivia? catTrivia,
     Uint8List? image,
+    List<CatHistoryDto>? catHistoryDtoList,
+    CatTriviaDto? catTriviaDto,
     Failure? error,
   }) = _CatTriviaState;
 }
